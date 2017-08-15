@@ -86,3 +86,85 @@ header {
     }
   }
 }
+
+.top-menu {
+  height: 90px;
+
+  .logo {
+    cursor: pointer;
+    
+    h1 {
+      font-family: Roboto;
+      font-size: 30px;
+      font-weight: 300;
+      color: #555252;
+
+      span {
+        color: $green;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .top-menu__nav {
+    .nav-link {
+      padding: 0;
+      font-size: 14px;
+      font-weight: 700;
+      color: #0f0101;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .search-cart {
+    position: relative;
+    color: #0f0101;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 33px;
+
+    .pe-7s-search {
+      font-size: 20px;
+      font-weight: 900;
+      padding-bottom: 2px;
+      margin-right: 7px;
+      cursor: pointer;
+    }
+
+    .top-menu__input-search {
+      position: absolute;
+      bottom: 10px;
+      outline: none;
+      display: none;
+    }
+
+    .top-menu__input-search_click {
+      display: flex;
+    }
+
+    .search-cart__cart {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      .pe-7s-lock {
+        position: relative;
+
+        .value-inside-icon {
+          position: absolute;
+          font-size: 14px;
+          bottom: 16%;
+          left: 40%;
+          color: $green;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
