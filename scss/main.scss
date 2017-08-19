@@ -284,3 +284,34 @@ header {
     right: 0;
   }
 }
+
+.about-us {
+  height: 451px;
+
+  .about-us-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555252;
+
+    .about-us_title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 62px;
+      margin-bottom: 29px;
+    }
+
+    .about-us_discription {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    &:hover {
+      .about-us_icon, .about-us_title {
+        color: $green;
+      }
+    }
+  }
+}
