@@ -92,7 +92,7 @@ header {
 
   .logo {
     cursor: pointer;
-    
+
     h1 {
       font-family: Roboto;
       font-size: 30px;
@@ -129,12 +129,29 @@ header {
     align-items: flex-end;
     padding-bottom: 33px;
 
-    .pe-7s-search {
+    .search-icon {
       font-size: 20px;
       font-weight: 900;
       padding-bottom: 2px;
       margin-right: 7px;
       cursor: pointer;
+      display: flex;
+    }
+
+    .search-icon_click {
+      display: none;
+    }
+
+    .close-search-icon {
+      display: none;
+    }
+
+    .close-search-icon_click {
+      font-size: 25px;
+      font-weight: 900;
+      margin-right: 7px;
+      cursor: pointer;
+      display: flex;
     }
 
     .top-menu__input-search {
@@ -166,5 +183,104 @@ header {
         }
       }
     }
+  }
+}
+
+.banner {
+  position: relative;
+
+  .banner-slider {
+
+    .banner-slider_slide {
+      width: 100%;
+      height: 600px;
+    }
+
+    .slide_1 {
+      background: url(../img/banner.jpg) no-repeat center / cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .slide-title {
+        color: #fffcfc;
+        font-size: 48px;
+        text-align: center;
+        margin: 0;
+
+        .slide-title_roboto {
+          font-family: Roboto;
+          font-weight: 300;
+        }
+
+        .slide-title_open-sans {
+          font-weight: 400;
+        }
+
+        .slide-title_green {
+          font-weight: 600;
+          color: $green;
+        }
+      }
+
+      .slide-btn {
+        width: 120px;
+        height: 42px;
+        border: 2px solid $green;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        transition: all, 0.5s;
+
+        &:hover {
+          background: $green;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .slide_2 {
+      background: url(../img/banner.jpg) no-repeat center / cover;
+    }
+
+    .slide_3 {
+      background: url(../img/banner.jpg) no-repeat center / cover;
+    }
+  }
+
+  .slider-nav {
+    width: 104px;
+    height: 104px;
+    background: $green;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all, 0.5s;
+
+    &:hover {
+      background: darken($green, 10%);
+    }
+  }
+
+  .slider-nav_left {
+    left: 0;
+  }
+
+  .slider-nav_right {
+    right: 0;
   }
 }
