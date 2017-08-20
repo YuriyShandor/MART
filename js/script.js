@@ -40,45 +40,51 @@ $(document).ready(function() {
   });
 });
 
-var productAll = document.getElementsByClassName('product__all');
+function productAmount(arr, inner) {
+  var count = 0;
 
-var productAllCount = 0;
+  for(var i=0; i <arr.length; i++) {
+    count++;
+  }
 
-for (var i=0; i < productAll.length; i++) {
-    productAllCount++;
+  inner.innerHTML = count;
 };
 
-document.getElementById('f-p__all').innerHTML = productAllCount;
+
+var productAll = document.getElementsByClassName('product__all');
+
+var productAllInner = document.getElementById('f-p__all');
+
+productAmount(productAll, productAllInner);
 
 
 var productDress = document.getElementsByClassName('product__dresses');
 
-var productDressCount = 0;
+var productDressInner = document.getElementById('f-p__dresses');
 
-for (var i=0; i < productDress.length; i++) {
-    productDressCount++;
-};
-
-document.getElementById('f-p__dresses').innerHTML = productDressCount;
+productAmount(productDress, productDressInner);
 
 
 var productAccessories = document.getElementsByClassName('product__accessories');
 
-var productAccessoriesCount = 0;
+var productAccessoriesInner = document.getElementById('f-p__accessories');
 
-for (var i=0; i < productAccessories.length; i++) {
-    productAccessoriesCount++;
-};
+productAmount(productAccessories, productAccessoriesInner);
 
-document.getElementById('f-p__accessories').innerHTML = productAccessoriesCount;
+
+// var productMiscellaneous = document.getElementsByClassName('product__miscellaneous');
+//
+// var productMiscellaneousCount = 0;
+//
+// for (var i=0; i < productMiscellaneous.length; i++) {
+//     productMiscellaneousCount++;
+// };
+//
+// document.getElementById('f-p__miscellaneous').innerHTML = productMiscellaneousCount;
 
 
 var productMiscellaneous = document.getElementsByClassName('product__miscellaneous');
 
-var productMiscellaneousCount = 0;
+var productMiscellaneousInner = document.getElementById('f-p__miscellaneous');
 
-for (var i=0; i < productMiscellaneous.length; i++) {
-    productMiscellaneousCount++;
-};
-
-document.getElementById('f-p__miscellaneous').innerHTML = productMiscellaneousCount;
+productAmount(productMiscellaneous, productMiscellaneousInner);
