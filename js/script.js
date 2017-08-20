@@ -72,17 +72,6 @@ var productAccessoriesInner = document.getElementById('f-p__accessories');
 productAmount(productAccessories, productAccessoriesInner);
 
 
-// var productMiscellaneous = document.getElementsByClassName('product__miscellaneous');
-//
-// var productMiscellaneousCount = 0;
-//
-// for (var i=0; i < productMiscellaneous.length; i++) {
-//     productMiscellaneousCount++;
-// };
-//
-// document.getElementById('f-p__miscellaneous').innerHTML = productMiscellaneousCount;
-
-
 var productMiscellaneous = document.getElementsByClassName('product__miscellaneous');
 
 var productMiscellaneousInner = document.getElementById('f-p__miscellaneous');
