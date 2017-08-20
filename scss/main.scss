@@ -331,6 +331,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 95px;
+  margin-bottom: 75px;
 
   .section-heading__title {
     text-transform: uppercase;
@@ -338,6 +340,8 @@ header {
     font-family: Roboto;
     font-size: 48px;
     font-weight: 900;
+    margin: 0;
+    margin-bottom: 25px;
   }
 
   .section-heading__line {
@@ -358,14 +362,8 @@ header {
 
 .new-collection {
   width: 100%;
-  height: 675px;
   background: #e9f0fd;
-  display: flex;
-  align-items: center;
-
-  .section-heading {
-    margin-bottom: 75px;
-  }
+  padding-bottom: 100px;
 }
 
 .product {
@@ -467,4 +465,100 @@ header {
       }
     }
   }
+
+  .product__status {
+    position: absolute;
+    top: 10px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .product__status_new {
+    left: 25px;
+  }
+
+  .product__status_sale {
+    right: 25px;
+  }
+}
+
+.futured-products {
+  padding-bottom: 65px;
+
+  .product {
+    margin-bottom: 30px;
+  }
+
+  .futured-products-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 105px;
+  }
+}
+
+.futured-products__btn {
+  margin: 0 7px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555252;
+  text-transform: uppercase;
+  border: 1px solid #959595;
+  height: 28px;
+  padding: 0 10px;
+  position: relative;
+
+  &:hover, &:focus {
+    border: 1px solid $green;
+    color: #fff;
+  }
+
+  &:hover {
+    background: lighten($green, 5%);
+
+    .product-amount {
+      display: flex;
+      color: #fff;
+      background: $green;
+    }
+  }
+
+  &:focus {
+    background: $green;
+    box-shadow: none;
+
+    .product-amount {
+      display: flex;
+    }
+  }
+}
+
+.product-amount {
+  position: absolute;
+  top: -33px;
+  right: -15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  color: $green;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.product_hide {
+  display: none;
 }
