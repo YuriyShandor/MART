@@ -63,7 +63,7 @@
           <span class="pe-7s-search search-icon"></span>
           <span class="pe-7s-close close-search-icon"></span>
           <input type="text" class="top-menu__input-search" name="" placeholder="Search..." value="">
-          <span class="search-cart__cart">Cart - <span class="cart-value">$0</span><span class="pe-7s-lock pe-2x"><span class="value-inside-icon">0</span></span></span>
+          <span class="search-cart__cart">Cart - <span class="cart-value">$0</span><span class="pe-7s-cart"><span class="value-inside-icon">0</span></span></span>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
       <span class="slider-nav slider-nav_right pe-5x pe-7s-angle-right"></span>
 
       <div class="banner-slider">
-        <div class="banner-slider_slide slide_1">
+        <div class="banner-slider__slide slide_1">
           <h1 class="slide-title"><span class="slide-title_roboto">DRESSES <span class="slide-title_green">&</span> JEANS </span><br>
           <span class="slide-title_open-sans">FROM OURFAMOUS BRANDS <span class="slide-title_green">SALE</span></span></h1>
 
@@ -84,10 +84,10 @@
           </div>
         </div>
 
-        <div class="banner-slider_slide slide_2">
+        <div class="banner-slider__slide slide_2">
         </div>
 
-        <div class="banner-slider_slide slide_3">
+        <div class="banner-slider__slide slide_3">
         </div>
       </div>
     </div>
@@ -97,33 +97,121 @@
     <div class="container">
       <div class="row about-us align-items-center">
         <div class="col-lg-3 about-us-info">
-          <span class="pe-5x pe-7s-settings about-us_icon"></span>
-          <h1 class="about-us_title">Setting</h1>
-          <p class="about-us_discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+          <span class="pe-5x pe-7s-settings about-us__icon"></span>
+          <h1 class="about-us__title">Setting</h1>
+          <p class="about-us__discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
         </div>
 
         <div class="col-lg-3 about-us-info">
-          <span class="pe-5x pe-7s-safe about-us_icon"></span>
-          <h1 class="about-us_title">Money back</h1>
-          <p class="about-us_discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+          <span class="pe-5x pe-7s-safe about-us__icon"></span>
+          <h1 class="about-us__title">Money back</h1>
+          <p class="about-us__discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
         </div>
 
         <div class="col-lg-3 about-us-info">
-          <span class="pe-5x pe-7s-global about-us_icon"></span>
-          <h1 class="about-us_title">WORLDWIDE SHIPPING</h1>
-          <p class="about-us_discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+          <span class="pe-5x pe-7s-global about-us__icon"></span>
+          <h1 class="about-us__title">WORLDWIDE SHIPPING</h1>
+          <p class="about-us__discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
         </div>
 
         <div class="col-lg-3 about-us-info">
-          <span class="pe-5x pe-7s-compass about-us_icon"></span>
-          <h1 class="about-us_title">WORLDWIDE SHIPPING</h1>
-          <p class="about-us_discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+          <span class="pe-5x pe-7s-compass about-us__icon"></span>
+          <h1 class="about-us__title">WORLDWIDE SHIPPING</h1>
+          <p class="about-us__discription">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section></section>
+  <section id="shop">
+    <div class="new-collection">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="section-heading">
+            <h1 class="section-heading__title">New collection</h1>
+            <div class="section-heading__line">
+              <div class="just-line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 product">
+            <img src="img/new-collection__item_1.jpg" alt="">
+            <div class="product__bottom">
+              <div class="product__title">Blue shirt</div>
+              <div class="product__price">$26</div>
+            </div>
+            <div class="product__hover">
+              <div class="hover-icons">
+                <span class="pe-7s-like pe-2x"></span>
+                <span class="pe-7s-shuffle pe-2x"></span>
+                <span class="pe-7s-clock pe-2x"></span>
+              </div>
+              <div class="hover-cart">
+                <i class="pe-7s-cart pe-2x"></i><span>Add to cart</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 product">
+            <img src="img/new-collection__item_2.jpg" alt="">
+            <div class="product__bottom">
+              <div class="product__title">Woman shirt</div>
+              <div class="product__price">$31</div>
+            </div>
+            <div class="product__hover">
+              <div class="hover-icons">
+                <span class="pe-7s-like pe-2x"></span>
+                <span class="pe-7s-shuffle pe-2x"></span>
+                <span class="pe-7s-clock pe-2x"></span>
+              </div>
+              <div class="hover-cart">
+                <i class="pe-7s-cart pe-2x"></i><span>Add to cart</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 product">
+            <img src="img/new-collection__item_3.jpg" alt="">
+            <div class="product__bottom">
+              <div class="product__title">Yellow shirt</div>
+              <div class="product__price">$21</div>
+            </div>
+            <div class="product__hover">
+              <div class="hover-icons">
+                <span class="pe-7s-like pe-2x"></span>
+                <span class="pe-7s-shuffle pe-2x"></span>
+                <span class="pe-7s-clock pe-2x"></span>
+              </div>
+              <div class="hover-cart">
+                <i class="pe-7s-cart pe-2x"></i><span>Add to cart</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 product">
+            <img src="img/new-collection__item_4.jpg" alt="">
+            <div class="product__bottom">
+              <div class="product__title">Cool lingerie</div>
+              <div class="product__price">$56</div>
+            </div>
+            <div class="product__hover">
+              <div class="hover-icons">
+                <span class="pe-7s-like pe-2x"></span>
+                <span class="pe-7s-shuffle pe-2x"></span>
+                <span class="pe-7s-clock pe-2x"></span>
+            </div>
+            <div class="hover-cart">
+              <i class="pe-7s-cart pe-2x"></i><span>Add to cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section></section>
   <section></section>
   <section></section>
