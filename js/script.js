@@ -32,6 +32,23 @@ $(document).ready(function() {
       $(`.product__${item}`).removeClass('product_hide');
     });
   });
+
+  $('.costumer-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.costumer-slider__nav'
+  });
+  
+  $('.costumer-slider__nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.costumer-slider',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
 });
 
 function productAmount(arr, inner) {
