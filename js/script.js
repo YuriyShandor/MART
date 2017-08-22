@@ -24,56 +24,32 @@ $(document).ready(function() {
     $('.product__all').removeClass('product_hide');
   });
 
-  $('.btn-f-p__dresses').click(function(){
-    $('.product__all').addClass('product_hide');
-    $('.product__dresses').removeClass('product_hide');
+  var products = ['dresses', 'accessories', 'miscellaneous'];
+
+  products.forEach(function(item) {
+    $(`.btn-f-p__${item}`).click(function(){
+      $('.product__all').addClass('product_hide');
+      $(`.product__${item}`).removeClass('product_hide');
+    });
   });
 
-  $('.btn-f-p__accessories').click(function(){
-    $('.product__all').addClass('product_hide');
-    $('.product__accessories').removeClass('product_hide');
-  });
-
-  $('.btn-f-p__miscellaneous').click(function(){
-    $('.product__all').addClass('product_hide');
-    $('.product__miscellaneous').removeClass('product_hide');
-  });
+  // var productsCount = ['all', 'dresses', 'accessories', 'miscellaneous'];
+  //
+  // productsCount.forEach(function(item){
+  //   var productsForCount = $(`.product__${item}`);
+  //   var productsCountForInner = $(`#f-p__${item}`);
+  //   productAmount(productsForCount, productsCountForInner);
+  // });
 });
 
 function productAmount(arr, inner) {
-  var count = 0;
-
-  for(var i=0; i <arr.length; i++) {
-    count++;
-  }
-
-  inner.innerHTML = count;
+  inner.innerHTML = arr.length;
 };
 
+var productsCount = ['all', 'dresses', 'accessories', 'miscellaneous'];
 
-var productAll = document.getElementsByClassName('product__all');
-
-var productAllInner = document.getElementById('f-p__all');
-
-productAmount(productAll, productAllInner);
-
-
-var productDress = document.getElementsByClassName('product__dresses');
-
-var productDressInner = document.getElementById('f-p__dresses');
-
-productAmount(productDress, productDressInner);
-
-
-var productAccessories = document.getElementsByClassName('product__accessories');
-
-var productAccessoriesInner = document.getElementById('f-p__accessories');
-
-productAmount(productAccessories, productAccessoriesInner);
-
-
-var productMiscellaneous = document.getElementsByClassName('product__miscellaneous');
-
-var productMiscellaneousInner = document.getElementById('f-p__miscellaneous');
-
-productAmount(productMiscellaneous, productMiscellaneousInner);
+productsCount.forEach(function(item){
+  var productsForCount = document.getElementsByClassName(`product__${item}`);
+  var productsCountForInner = document.getElementById(`f-p__${item}`);
+  productAmount(productsForCount, productsCountForInner);
+});
