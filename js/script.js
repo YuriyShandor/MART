@@ -32,14 +32,6 @@ $(document).ready(function() {
       $(`.product__${item}`).removeClass('product_hide');
     });
   });
-
-  // var productsCount = ['all', 'dresses', 'accessories', 'miscellaneous'];
-  //
-  // productsCount.forEach(function(item){
-  //   var productsForCount = $(`.product__${item}`);
-  //   var productsCountForInner = $(`#f-p__${item}`);
-  //   productAmount(productsForCount, productsCountForInner);
-  // });
 });
 
 function productAmount(arr, inner) {
