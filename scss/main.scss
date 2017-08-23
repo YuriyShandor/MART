@@ -733,4 +733,56 @@ header {
   width: 100%;
   height: auto;
   border: 1px solid $green;
+  overflow: hidden;
+  transition: all, 0.2s;
+
+  &:hover {
+    border: 3px solid $green;
+  }
+}
+
+.latest-news {
+  .news__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .news__title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #555252;
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+
+  .news__line {
+    width: 136px;
+    height: 3px;
+    background: $green;
+    margin-bottom: 29px;
+  }
+
+  .news__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #555252;
+    margin: 0;
+    margin-bottom: 17px;
+  }
+
+  .read-more_news {
+    width: 158px;
+    height: 51px;
+    background: $green;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: all, 0.5s;
+    margin-bottom: 79px;
+
+    &:hover {
+      background: darken($green, 10%);
+    }
+  }
 }
