@@ -87,24 +87,24 @@ header {
   }
 }
 
-.top-menu {
-  height: 90px;
+.logo {
+  cursor: pointer;
 
-  .logo {
-    cursor: pointer;
+  h1 {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 300;
+    color: #555252;
 
-    h1 {
-      font-family: Roboto;
-      font-size: 30px;
-      font-weight: 300;
-      color: #555252;
-
-      span {
-        color: $green;
-        font-weight: 900;
-      }
+    span {
+      color: $green;
+      font-weight: 900;
     }
   }
+}
+
+.top-menu {
+  height: 90px;
 
   .top-menu__nav {
     .nav-link {
@@ -696,6 +696,7 @@ header {
     position: relative;
 
     .form-control {
+      outline: none;
       border-radius: 5px;
 
       .form-control::placeholder {
@@ -780,6 +781,147 @@ header {
     font-size: 16px;
     transition: all, 0.5s;
     margin-bottom: 79px;
+
+    &:hover {
+      background: darken($green, 10%);
+    }
+  }
+}
+
+#contacts {
+  width: 100%;
+  height: 717px;
+  background: url(../img/contacts__bg.jpg) no-repeat center / cover;
+}
+
+.section-contacts {
+  font-family: Roboto;
+  color: #fff;
+
+  .section-heading__title {
+    color: #fff;
+  }
+
+  .contact-info {
+    .logo {
+      h1 {
+        font-size: 72px;
+        color: #fff;
+        margin: 0;
+        margin-top: -13px;
+        padding: 0;
+      }
+    }
+
+    .contact-info__text {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      div {
+        font-size: 14px;
+
+        .info_green {
+          font-weight: 900;
+          color: $green;
+        }
+      }
+    }
+
+    .contacts__icons {
+      width: 230px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 18px;
+
+      .contacts__icon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        transition: all, 0.3s;
+
+        &:hover {
+          border: none;
+          background: $green;
+        }
+      }
+    }
+  }
+
+  .contact-us {
+    .contact-as__form {
+      width: 100%;
+      outline: none;
+      background: transparent;
+      border: 1px solid #fff;
+      margin-bottom: 30px;
+
+      &::placeholder {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+      }
+
+      &[value] {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        padding-left: 18px;
+        color: $green;
+        width: 100%;
+      }
+
+      &:hover, &:focus {
+        border: 1px solid $green;
+
+        &::placeholder {
+          color: $green;
+        }
+      }
+    }
+
+    .contact-as__form_small {
+      height: 50px;
+    }
+
+    .contact-as__form_big {
+      height: 119px;
+      display: flex;
+      align-items: flex-start;
+      padding-top: 15px;
+    }
+  }
+
+  .contact-btn {
+    width: 150px;
+    height: 50px;
+    background: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all, 0.5s;
 
     &:hover {
       background: darken($green, 10%);
