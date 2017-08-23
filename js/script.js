@@ -40,7 +40,7 @@ $(document).ready(function() {
     fade: true,
     asNavFor: '.costumer-slider__nav'
   });
-  
+
   $('.costumer-slider__nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -49,6 +49,19 @@ $(document).ready(function() {
     centerMode: true,
     focusOnSelect: true
   });
+
+  $('a[href^="#"]').on('click',function (e) {
+	  e.preventDefault();
+
+	  var target = this.hash;
+    var $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 700, 'swing', function () {
+      window.location.hash = target;
+    });
+	});
 });
 
 function productAmount(arr, inner) {
