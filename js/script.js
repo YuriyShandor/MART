@@ -38,7 +38,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.costumer-slider__nav'
+    asNavFor: '.costumer-slider__nav',
   });
 
   $('.costumer-slider__nav').slick({
@@ -47,7 +47,7 @@ $(document).ready(function() {
     asNavFor: '.costumer-slider',
     dots: true,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
   });
 
   $('a[href^="#"]').on('click',function (e) {
