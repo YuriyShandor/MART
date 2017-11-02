@@ -1,8 +1,11 @@
+// to compile
+
 @import "components/_roboto.scss";
 @import "./components/_open-sans.scss";
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   //border: 1px solid red;
 
 }
@@ -25,27 +28,22 @@ $green: #1abc9c;
 
 header {
   width: 100%;
-  height: 50px;
   background: $green;
   font-size: 14px;
   color: #fff;
 
-  .container {
-    height: inherit;
-  }
-
-  .row {
-    height: inherit;
-  }
-
   .header-info {
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
     font-size: 14px;
     color: #fff;
 
     .header-email {
-      transform: translateX(10px);
+      margin-left: 30px;
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
       a {
         color: #fff;
 
@@ -56,7 +54,8 @@ header {
     }
 
     .header-info__icon {
-      transform: translateY(3px);
+      -webkit-transform: translateY(3px);
+              transform: translateY(3px);
       font-size: 18px;
     }
 
@@ -67,10 +66,28 @@ header {
 
   .header-nav {
     height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 
     .navbar {
       padding: 0;
+    }
+
+    .navbar-nav {
+      padding: 0;
       height: inherit;
+
+      .nav-item {
+        margin-left: 30px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
 
       .nav-link {
         padding: 0;
@@ -108,6 +125,17 @@ header {
   height: 90px;
 
   .top-menu__nav {
+    .navbar {
+      padding: 0;
+    }
+
+    .nav-item {
+      margin-left: 25px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
     .nav-link {
       padding: 0;
       font-size: 14px;
@@ -125,9 +153,15 @@ header {
     position: relative;
     color: #0f0101;
     height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding-bottom: 33px;
 
     .search-icon {
@@ -136,6 +170,8 @@ header {
       padding-bottom: 2px;
       margin-right: 7px;
       cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       &:hover {
@@ -156,6 +192,8 @@ header {
       font-weight: 900;
       margin-right: 7px;
       cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       &:hover {
@@ -171,6 +209,8 @@ header {
     }
 
     .top-menu__input-search_click {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
 
@@ -182,7 +222,8 @@ header {
       .pe-7s-cart {
         font-size: 40px;
         position: relative;
-        transform: translateY(7px);
+        -webkit-transform: translateY(7px);
+                transform: translateY(7px);
         margin-left: 5px;
 
         .value-inside-icon {
@@ -210,10 +251,19 @@ header {
 
     .slide_1 {
       background: url(../img/banner.jpg) no-repeat center / cover;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 
       .slide-title {
         color: #fffcfc;
@@ -241,15 +291,22 @@ header {
         height: 42px;
         border: 2px solid $green;
         margin-top: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-transform: uppercase;
         font-size: 14px;
         font-family: Roboto;
         font-weight: 400;
         color: #fff;
         cursor: pointer;
+        -webkit-transition: all, 0.5s;
         transition: all, 0.5s;
 
         &:hover {
@@ -274,13 +331,21 @@ header {
     background: $green;
     position: absolute;
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #fff;
     cursor: pointer;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all, 0.5s;
     transition: all, 0.5s;
 
     &:hover {
@@ -301,9 +366,16 @@ header {
   height: 451px;
 
   .about-us-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #555252;
 
     .about-us__title {
@@ -329,9 +401,16 @@ header {
 }
 
 .section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 95px;
   margin-bottom: 75px;
 
@@ -350,8 +429,12 @@ header {
     height: 15px;
     border-top: 2px solid $green;
     border-bottom: 2px solid $green;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .just-line {
       width: inherit;
@@ -373,13 +456,22 @@ header {
   position: relative;
   cursor: pointer;
 
+  img {
+    width: inherit;
+    height: inherit;
+  }
+
   &:hover {
     .product__hover {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
   }
 
   .product__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     bottom: 0;
@@ -392,21 +484,31 @@ header {
     color: #fff;
 
     .product__title {
-      width: 200px;
+      width: 80%;
       height: inherit;
       background: #323232;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding-left: 15px;
     }
 
     .product__price {
-      width: 55px;
+      width: 20%;
       height: inherit;
       background: #8c8c8c;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
   }
 
@@ -417,24 +519,41 @@ header {
     left: 25px;
     top: 10px;
     display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: rgba(50, 50, 50, 0.6);
 
     .hover-icons {
       width: 166px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       color: #fff;
 
       span {
         width: 50px;
         height: 50px;
         border: 1px solid #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         cursor: pointer;
 
         &:hover {
@@ -447,9 +566,15 @@ header {
       width: 166px;
       height: 50px;
       border: 1px solid #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-top: 7px;
       background: #323232;
       color: #fff;
@@ -473,9 +598,15 @@ header {
     width: 70px;
     height: 30px;
     border: 1px solid #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
@@ -500,8 +631,12 @@ header {
   }
 
   .futured-products-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 105px;
   }
 }
@@ -527,6 +662,8 @@ header {
     background: lighten($green, 5%);
 
     .product-amount {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       color: #fff;
       background: $green;
@@ -535,9 +672,12 @@ header {
 
   &:focus {
     background: $green;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 
     .product-amount {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
   }
@@ -548,8 +688,12 @@ header {
   top: -33px;
   right: -15px;
   display: none;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 38px;
   height: 38px;
   border: 1px solid #000;
@@ -573,10 +717,19 @@ header {
 .seasons-sale {
   width: inherit;
   height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fffefe;
 
   h1 {
@@ -594,9 +747,16 @@ header {
 }
 
 .costumer__slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   margin-bottom: 28px;
 
   .costumer__img {
@@ -641,8 +801,12 @@ header {
   .slick-track {
     margin: 0 auto !important;
     width: 290px !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    justify-content: space-between !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
   }
 
   .costumer__slide_nav {
@@ -700,6 +864,24 @@ header {
       outline: none;
       border-radius: 5px;
 
+      .form-control::-webkit-input-placeholder {
+        font-size: 16px;
+        font-weight: 300;
+        color: #555252;
+      }
+
+      .form-control:-ms-input-placeholder {
+        font-size: 16px;
+        font-weight: 300;
+        color: #555252;
+      }
+
+      .form-control::-ms-input-placeholder {
+        font-size: 16px;
+        font-weight: 300;
+        color: #555252;
+      }
+
       .form-control::placeholder {
         font-size: 16px;
         font-weight: 300;
@@ -715,9 +897,15 @@ header {
       height: 56px;
       margin: 2px;
       background: #4ec6ab;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       color: #fff;
       cursor: pointer;
       font-size: 50px;
@@ -736,6 +924,7 @@ header {
   height: auto;
   border: 1px solid $green;
   overflow: hidden;
+  -webkit-transition: all, 0.2s;
   transition: all, 0.2s;
 
   &:hover {
@@ -780,6 +969,7 @@ header {
     cursor: pointer;
     color: #fff;
     font-size: 16px;
+    -webkit-transition: all, 0.5s;
     transition: all, 0.5s;
     margin-bottom: 79px;
 
@@ -815,8 +1005,13 @@ header {
     }
 
     .contact-info__text {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
 
       h1 {
         font-size: 18px;
@@ -843,17 +1038,28 @@ header {
 
     .contacts__icons {
       width: 230px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       margin-top: 18px;
 
       .contacts__icon {
         width: 30px;
         height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         border: 1px solid #fff;
+        -webkit-transition: all, 0.3s;
         transition: all, 0.3s;
 
         &:hover {
@@ -871,6 +1077,27 @@ header {
       background: transparent;
       border: 1px solid #fff;
       margin-bottom: 30px;
+
+      &::-webkit-input-placeholder {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+      }
+
+      &:-ms-input-placeholder {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+      }
+
+      &::-ms-input-placeholder {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+      }
 
       &::placeholder {
         font-family: Roboto;
@@ -891,6 +1118,18 @@ header {
       &:hover, &:focus {
         border: 1px solid $green;
 
+        &::-webkit-input-placeholder {
+          color: $green;
+        }
+
+        &:-ms-input-placeholder {
+          color: $green;
+        }
+
+        &::-ms-input-placeholder {
+          color: $green;
+        }
+
         &::placeholder {
           color: $green;
         }
@@ -903,8 +1142,12 @@ header {
 
     .contact-as__form_big {
       height: 119px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       padding-top: 15px;
     }
   }
@@ -913,15 +1156,22 @@ header {
     width: 150px;
     height: 50px;
     background: $green;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #fff;
     text-transform: uppercase;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    -webkit-transition: all, 0.5s;
     transition: all, 0.5s;
 
     &:hover {
@@ -934,9 +1184,15 @@ footer {
   width: 100%;
   height: 82px;
   background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   h1 {
     font-size: 16px;
@@ -948,3 +1204,5 @@ footer {
     }
   }
 }
+
+@import "./responsive.scss";

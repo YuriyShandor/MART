@@ -1,0 +1,38 @@
+@media only screen and (max-width : 1199px) {
+  .banner {
+    .banner-slider {
+      .banner-slider__slide {
+        height: 540px;
+      }
+    }
+    .slider-nav {
+      width: 84px;
+      height: 84px;
+    }
+  }
+
+  .product {
+    width: 215px;
+    height: 300px;
+
+    .product__hover {
+      width: 195px;
+    }
+
+    .product__status_sale {
+      right: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}

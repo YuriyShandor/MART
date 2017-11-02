@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MART</title>
 
-  <link rel="stylesheet" href="scss/components/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-  <link rel="stylesheet" href="scss/components/pe-icon-7-stroke/css/helper.css">
-  <link rel="stylesheet" href="scss/bootstrap.css">
-  <link rel="stylesheet" href="scss/normalize.css">
-  <link rel="stylesheet" href="scss/slick.css">
-  <link rel="stylesheet" href="scss/slick-theme.css">
-  <link rel="stylesheet" href="scss/main.css">
+  <link rel="stylesheet" href="css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="css/pe-icon-7-stroke/css/helper.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
@@ -20,7 +20,7 @@
   <header>
     <div class="container">
       <div class="row justify-content-between align-items-center">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="header-info">
             <div class="header-phone">
               <span class="header-info__icon pe-7s-call"></span><span href="#">123-123456789</span>
@@ -30,14 +30,22 @@
             </div>
           </div>
         </div>
-        <div class="header-nav col-lg-5">
-          <ul class="nav navbar">
-            <li><a class="nav-link" href="#">My Account </a></li>
-            <li><a class="nav-link" href="#">Wishlist</a></li>
-            <li><a class="nav-link" href="#">Cart</a></li>
-            <li><a class="nav-link" href="#">Checkout</a></li>
-            <li><a class="nav-link" href="#"><span class="pe-7s-lock"></span>Login/Register</a></li>
-          </ul>
+        <div class="header-nav col-lg-6">
+          <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">My Account </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Checkout</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="pe-7s-lock"></span>Login/Register</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
@@ -50,14 +58,22 @@
           <h1><span>M</span>ART</h1>
         </div>
         <div class="col-lg-6 top-menu__nav">
-          <ul class="nav navbar">
-            <li><a class="nav-link" href="#">Home</a></li>
-            <li><a class="nav-link" href="#about-us">About Us</a></li>
-            <li><a class="nav-link" href="#">Page</a></li>
-            <li><a class="nav-link" href="#shop">Shop</a></li>
-            <li><a class="nav-link" href="#">Blog</a></li>
-            <li><a class="nav-link" href="#contacts">Contacts Us</a></li>
-          </ul>
+          <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts Us</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
         <div class="col-lg-3 search-cart">
           <span class="pe-7s-search search-icon"></span>
@@ -136,7 +152,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-3 product">
+          <div class="col-lg-3 col-md-3 product">
             <img src="img/new-collection__item_1.jpg" alt="">
             <div class="product__bottom">
               <div class="product__title">Blue shirt</div>
@@ -154,7 +170,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 product">
+          <div class="col-lg-3 col-md-3 product">
             <img src="img/new-collection__item_2.jpg" alt="">
             <div class="product__bottom">
               <div class="product__title">Woman shirt</div>
@@ -172,7 +188,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 product">
+          <div class="col-lg-3 col-md-3 product">
             <img src="img/new-collection__item_3.jpg" alt="">
             <div class="product__bottom">
               <div class="product__title">Yellow shirt</div>
@@ -190,7 +206,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 product">
+          <div class="col-lg-3 col-md-3 product">
             <img src="img/new-collection__item_4.jpg" alt="">
             <div class="product__bottom">
               <div class="product__title">Cool lingerie</div>
