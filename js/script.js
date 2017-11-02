@@ -62,6 +62,10 @@ $(document).ready(function() {
       window.location.hash = target;
     });
 	});
+
+  $('.top-menu__toggler-icon').on('click', function() {
+    $('.top-menu__navbar-nav').toggleClass('top-menu__navbar-nav_on-click');
+  });
 });
 
 function productAmount(arr, inner) {

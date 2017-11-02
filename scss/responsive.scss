@@ -26,7 +26,110 @@
 }
 
 @media only screen and (max-width : 991px) {
+  header {
+    .header-nav {
+      .navbar {
+        padding: 0;
+      }
 
+      .navbar-toggler {
+        padding: 0;
+        outline: none;
+      }
+
+      .navbar-toggler-icon {
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .navbar-collapse {
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        right: 0;
+      }
+
+      .navbar-nav {
+        background: $green;
+        width: 175px;
+        padding-bottom: 20px;
+
+        .nav-item {
+          margin-left: 0;
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .top-menu {
+    .top-menu__nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+
+      .top-menu__toggler-icon {
+        display: block;
+        -webkit-transform: translateX(45px);
+                transform: translateX(45px);
+        font-size: 26px;
+        color: $green;
+        cursor: pointer;
+      }
+
+      .navbar {
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+
+        .top-menu__navbar-nav {
+          position: absolute;
+          top: 25px;
+          left: -100%;
+          z-index: 10;
+          background: lighten($green, 50%);
+          width: 170px;
+          text-align: center;
+          padding: 15px 0;
+
+          .nav-item {
+            margin-left: 0;
+            margin-top: 10px;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .search-cart {
+      margin-left: auto;
+    }
+  }
+
+  .top-menu__navbar-nav {
+    display: none;
+  }
+
+  .top-menu__navbar-nav_on-click {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (max-width : 767px) {
