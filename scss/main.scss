@@ -386,7 +386,7 @@ header {
 }
 
 .about-us {
-  height: 751px;
+  height: 451px;
 
   .about-us-info {
     display: -webkit-box;
@@ -479,17 +479,23 @@ header {
   position: relative;
   cursor: pointer;
 
+  .product-content {
+    width: inherit;
+    height: inherit;
+    margin: auto;
+
+    &:hover {
+      .product__hover {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+  }
+
   img {
     width: inherit;
     height: inherit;
-  }
-
-  &:hover {
-    .product__hover {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
   }
 
   .product__bottom {

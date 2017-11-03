@@ -1,4 +1,4 @@
-@media only screen and (max-width : 1199px) {
+@media only screen and (max-width : 1200px) {
   .banner {
     .banner-slider {
       .banner-slider__slide {
@@ -163,26 +163,7 @@
     height: 322px;
     position: relative;
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-bottom: 30px;
-
-    img {
-      width: inherit;
-      height: inherit;
-    }
-
-    &:hover {
-      .product__hover {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-      }
-    }
 
     .product__bottom {
       display: -webkit-box;
@@ -332,16 +313,24 @@
     }
 
     .product__status_new {
-      left: 25px;
+      left: 63px;
     }
 
     .product__status_sale {
-      right: 25px;
+      right: 63px;
     }
   }
 
   .new-collection {
     padding-bottom: 60px;
+  }
+
+  #partners {
+    height: 750px;
+  }
+
+  .our-partners__block {
+    margin-bottom: 30px;
   }
 }
 
