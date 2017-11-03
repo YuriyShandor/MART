@@ -38,6 +38,8 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     asNavFor: '.costumer-slider__nav',
   });
 

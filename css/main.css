@@ -495,6 +495,7 @@ header .header-nav .navbar-nav .nav-link span {
   font-weight: 900;
   margin: 0;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .section-heading .section-heading__line {
@@ -1583,7 +1584,7 @@ footer h1 span {
     height: 38px;
   }
   .product {
-    width: 215px;
+    width: 240px;
     height: 300px;
   }
   .product .product__hover {
@@ -1643,6 +1644,179 @@ footer h1 span {
   }
   #contacts {
     height: 1020px;
+  }
+  .section-contacts .contact-us {
+    margin-top: 65px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header .header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .header-nav {
+    margin-top: -10px;
+    padding-bottom: 10px;
+  }
+  header .header-nav .navbar {
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .header-nav .navbar-toggler-icon {
+    font-size: 28px;
+  }
+  header .header-nav .navbar-collapse {
+    width: inherit;
+  }
+  header .header-nav .navbar-nav {
+    width: inherit;
+  }
+  .top-menu {
+    height: 70px;
+  }
+  .top-menu .top-menu__nav .navbar {
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .top-menu .top-menu__nav .navbar .top-menu__navbar-nav {
+    left: 0;
+    width: inherit;
+  }
+  .top-menu .top-menu__nav .top-menu__toggler-icon {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  .banner .banner-slider .banner-slider__slide {
+    height: 200px;
+  }
+  .banner .banner-slider .banner-slider__slide .slide-title {
+    font-size: 18px;
+  }
+  .banner .banner-slider .banner-slider__slide .slide-btn {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .about-us {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .about-us .about-us-info {
+    margin-top: 30px;
+  }
+  .about-us .about-us-info .about-us__icon {
+    font-size: 4em;
+  }
+  .about-us .about-us-info .about-us__title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  .product {
+    width: 255px;
+    height: 322px;
+  }
+  .product .product__hover {
+    width: 235px;
+    height: 260px;
+    left: 50%;
+    top: 10px;
+  }
+  .product .product__status_new {
+    left: 35px;
+  }
+  .product .product__status_sale {
+    right: 35px;
+  }
+  .futured-products {
+    padding-bottom: 35px;
+  }
+  .futured-products .futured-products-buttons {
+    margin-bottom: 50px;
+  }
+  .futured-products .futured-products-buttons .futured-products__btn {
+    margin-top: 15px;
+  }
+  .section-heading {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .section-heading .section-heading__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  #season-sale {
+    height: 200px;
+  }
+  .seasons-sale h1 {
+    font-size: 24px;
+  }
+  .seasons-sale h2 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .costumer-slider__nav {
+    display: none;
+  }
+  .costumer__slide {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    margin-bottom: 28px;
+  }
+  .costumer__slide .costumer__img {
+    width: 222px;
+    height: 222px;
+    border-radius: 120px;
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+  .costumer__slide .costumer__img img {
+    width: 222px;
+    height: auto;
+  }
+  #partners {
+    height: 1020px;
+  }
+  #news-letters {
+    height: 300px;
+  }
+  .newsletters .section-heading {
+    margin-top: 40px;
+  }
+  .newsletters .newsletters__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .newsletters .input-group {
+    height: 50px;
+  }
+  .newsletters .input-group .input-group-addon {
+    height: 46px;
+  }
+  #contacts {
+    height: 1220px;
   }
   .section-contacts .contact-us {
     margin-top: 65px;
