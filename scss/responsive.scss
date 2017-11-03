@@ -321,6 +321,21 @@
     }
   }
 
+  #season-sale {
+    height: 350px;
+  }
+
+  .seasons-sale {
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 20px;
+    }
+  }
+
   .new-collection {
     padding-bottom: 60px;
   }
@@ -345,9 +360,124 @@
 }
 
 @media only screen and (max-width : 767px) {
+  .top-menu {
+    .top-menu__nav {
+      .top-menu__toggler-icon {
+        -webkit-transform: translateX(55px);
+                transform: translateX(55px);
+      }
+    }
+  }
 
+  .banner {
+    .banner-slider {
+      .banner-slider__slide {
+        height: 320px;
+
+        .slide-title {
+          font-size: 34px;
+        }
+
+        .banner .banner-slider .slide_1 .slide-btn {
+          width: 110px;
+          height: 38px;
+        }
+      }
+    }
+  }
+
+  .product {
+    width: 215px;
+    height: 300px;
+
+    .product__hover {
+      width: 195px;
+      height: 240px;
+    }
+
+    .product__status_new {
+      left: 37px;
+    }
+
+    .product__status_sale {
+      right: 37px;
+    }
+  }
+
+  .futured-products {
+    padding-bottom: 55px;
+
+    .futured-products-buttons {
+      margin-bottom: 70px;
+
+      .futured-products__btn {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .section-heading {
+    margin-top: 65px;
+    margin-bottom: 55px;
+
+    .section-heading__title {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #season-sale {
+    height: 300px;
+  }
+
+  .seasons-sale {
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  }
+
+  #partners {
+    height: 610px;
+  }
+
+  #news-letters {
+    height: 360px;
+  }
+
+  .newsletters {
+    .section-heading {
+      margin-top: 60px;
+    }
+
+    .newsletters__text {
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      height: 50px;
+
+      .input-group-addon {
+        height: 46px;
+      }
+    }
+  }
+
+  #contacts {
+    height: 1020px;
+  }
+
+  .section-contacts {
+    .contact-us {
+      margin-top: 65px;
+    }
+  }
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 575px) {
 
 }
