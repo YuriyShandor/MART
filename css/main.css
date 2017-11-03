@@ -1547,4 +1547,10 @@ footer h1 span {
   .our-partners__block {
     margin-bottom: 30px;
   }
+  #contacts {
+    height: 1075px;
+  }
+  .section-contacts .contact-us {
+    margin-top: 65px;
+  }
 }
