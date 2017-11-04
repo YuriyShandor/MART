@@ -66,8 +66,9 @@ $(document).ready(function() {
 	});
 
   $('.top-menu__toggler-icon').on('click', function() {
-    $('.top-menu__navbar-nav').toggleClass('top-menu__navbar-nav_on-click');
+    $('.top-menu__navbar-nav').slideToggle("0.5s");
   });
+
 });
 
 function productAmount(arr, inner) {
