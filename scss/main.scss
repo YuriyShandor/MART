@@ -475,15 +475,14 @@ header {
 }
 
 .product {
-  width: 255px;
-  height: 322px;
   position: relative;
   cursor: pointer;
 
   .product-content {
-    width: inherit;
-    height: inherit;
+    width: 255px;
+    height: 322px;
     margin: auto;
+    position: relative;
 
     &:hover {
       .product__hover {
@@ -546,8 +545,10 @@ header {
     width: 235px;
     height: 260px;
     position: absolute;
-    left: 25px;
+    left: 50%;
     top: 10px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -645,11 +646,11 @@ header {
   }
 
   .product__status_new {
-    left: 25px;
+    left: 10px;
   }
 
   .product__status_sale {
-    right: 25px;
+    right: 10px;
   }
 }
 

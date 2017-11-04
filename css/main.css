@@ -524,16 +524,15 @@ header .header-nav .navbar-nav .nav-link span {
 }
 
 .product {
-  width: 255px;
-  height: 322px;
   position: relative;
   cursor: pointer;
 }
 
 .product .product-content {
-  width: inherit;
-  height: inherit;
+  width: 255px;
+  height: 322px;
   margin: auto;
+  position: relative;
 }
 
 .product .product-content:hover .product__hover {
@@ -594,8 +593,10 @@ header .header-nav .navbar-nav .nav-link span {
   width: 235px;
   height: 260px;
   position: absolute;
-  left: 25px;
+  left: 50%;
   top: 10px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -693,11 +694,11 @@ header .header-nav .navbar-nav .nav-link span {
 }
 
 .product .product__status_new {
-  left: 25px;
+  left: 10px;
 }
 
 .product .product__status_sale {
-  right: 25px;
+  right: 10px;
 }
 
 .futured-products {
@@ -1278,7 +1279,7 @@ footer h1 span {
     width: 84px;
     height: 84px;
   }
-  .product {
+  .product .product-content {
     width: 215px;
     height: 300px;
   }
@@ -1286,8 +1287,11 @@ footer h1 span {
     width: 195px;
     height: 240px;
   }
+  .product .product__status_new {
+    left: 10.5px;
+  }
   .product .product__status_sale {
-    right: 20px;
+    right: 10.5px;
   }
 }
 
@@ -1394,11 +1398,13 @@ footer h1 span {
     margin-bottom: 20px;
   }
   .product {
-    width: 255px;
-    height: 322px;
     position: relative;
     cursor: pointer;
     margin-bottom: 30px;
+  }
+  .product .product-content {
+    width: 255px;
+    height: 322px;
   }
   .product .product__bottom {
     width: inherit;
@@ -1412,16 +1418,12 @@ footer h1 span {
   .product .product__hover {
     width: 235px;
     height: 260px;
-    left: 50%;
-    top: 10px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
   .product .product__status_new {
-    left: 63px;
+    left: 10px;
   }
   .product .product__status_sale {
-    right: 63px;
+    right: 10px;
   }
   #season-sale {
     height: 350px;
@@ -1491,7 +1493,7 @@ footer h1 span {
     width: 110px;
     height: 38px;
   }
-  .product {
+  .product .product-content {
     width: 240px;
     height: 300px;
   }
@@ -1500,10 +1502,10 @@ footer h1 span {
     height: 240px;
   }
   .product .product__status_new {
-    left: 37px;
+    left: 22.5px;
   }
   .product .product__status_sale {
-    right: 37px;
+    right: 22.5px;
   }
   .futured-products {
     padding-bottom: 55px;
@@ -1634,21 +1636,19 @@ footer h1 span {
     margin-top: 30px;
     margin-bottom: 25px;
   }
-  .product {
+  .product .product-content {
     width: 255px;
     height: 322px;
   }
   .product .product__hover {
     width: 235px;
     height: 260px;
-    left: 50%;
-    top: 10px;
   }
   .product .product__status_new {
-    left: 35px;
+    left: 10.5px;
   }
   .product .product__status_sale {
-    right: 35px;
+    right: 10.5px;
   }
   .futured-products {
     padding-bottom: 35px;
