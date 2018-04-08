@@ -703,6 +703,7 @@ header {
   border: 1px solid #959595;
   height: 28px;
   padding: 0 10px;
+  cursor: pointer;
   position: relative;
 
   &:hover, &:focus {
@@ -969,16 +970,24 @@ header {
   padding-bottom: 100px;
 }
 
+.our-partners__block {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid $green;
+
+  a {
+    width: 100%;
+  }
+}
+
 .our-partners__image {
   width: 100%;
-  height: auto;
-  border: 1px solid $green;
-  overflow: hidden;
-  -webkit-transition: all, 0.2s;
-  transition: all, 0.2s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
 
   &:hover {
-    border: 3px solid $green;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 

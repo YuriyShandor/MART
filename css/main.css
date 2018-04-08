@@ -750,6 +750,7 @@ header .header-nav .navbar-nav .nav-link span {
   border: 1px solid #959595;
   height: 28px;
   padding: 0 10px;
+  cursor: pointer;
   position: relative;
 }
 
@@ -1012,17 +1013,25 @@ header .header-nav .navbar-nav .nav-link span {
   padding-bottom: 100px;
 }
 
+.our-partners__block {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #1abc9c;
+}
+
+.our-partners__block a {
+  width: 100%;
+}
+
 .our-partners__image {
   width: 100%;
-  height: auto;
-  border: 1px solid #1abc9c;
-  overflow: hidden;
-  -webkit-transition: all, 0.2s;
-  transition: all, 0.2s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
 }
 
 .our-partners__image:hover {
-  border: 3px solid #1abc9c;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .latest-news .news__image {
