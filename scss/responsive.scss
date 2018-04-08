@@ -125,10 +125,6 @@
     }
   }
 
-  // .top-menu__navbar-nav {
-  //   display: none;
-  // }
-
   .banner {
     .banner-slider {
       .banner-slider__slide {
@@ -195,6 +191,7 @@
 
   #season-sale {
     height: 350px;
+    background-attachment: scroll;
   }
 
   .seasons-sale {

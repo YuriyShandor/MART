@@ -74,6 +74,7 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a:hover, a:focus {
@@ -810,6 +811,7 @@ header .header-nav .navbar-nav .nav-link span {
   width: 100%;
   height: 401px;
   background: url(../img/sale-seasons__bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
 }
 
 .seasons-sale {
@@ -1434,6 +1436,7 @@ footer h1 span {
   }
   #season-sale {
     height: 350px;
+    background-attachment: scroll;
   }
   .seasons-sale h1 {
     font-size: 50px;

@@ -69,6 +69,12 @@ $(document).ready(function() {
     $('.top-menu__navbar-nav').slideToggle("0.5s");
   });
 
+  AOS.init({
+    duration: 1500,
+    easing: 'ease-in-out-back',
+    once: true,
+    disable: window.innerWidth < 991
+  });
 });
 
 function productAmount(arr, inner) {
